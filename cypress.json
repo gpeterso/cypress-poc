@@ -1,3 +1,4 @@
 {
+  "projectId": "cypress-poc",
   "baseUrl": "https://primo-test.lib.umn.edu"
 }
