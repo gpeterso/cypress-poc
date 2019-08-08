@@ -1,10 +1,4 @@
-Cypress.env({
-  "searchPage": `/primo-explore/search?vid=${Cypress.env('vid')}`
-})
-
-const urls = {
-  searchPage: `/primo-explore/search?vid=${Cypress.env('vid')}`
-};
+import urls from '../support/urls';
 
 describe('Search Test', () => {
   it('works', () => {
