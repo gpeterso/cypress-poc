@@ -8,8 +8,11 @@ const searchFor = function(query) {
 }
 
 describe('Basic Search', () => {
-  it('works', () => {
+  before(() => {
     cy.visit(urls.searchPage);
+  });
+
+  it('returns results', () => {
     searchFor('test');
     cy.get(searchElements.resultsContainer)
       .children()
