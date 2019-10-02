@@ -8,7 +8,7 @@ const searchFor = function(query) {
 }
 
 describe('Basic Search', () => {
-  before(() => {
+  beforeEach(() => {
     cy.visit(urls.searchPage);
   });
 
